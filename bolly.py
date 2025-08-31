@@ -59,7 +59,8 @@ while True:
             guess=guess1
     
         if len(guess)==1:
-            m=m-1
+            if guess in guesses:
+                continue
             break
         
         elif guess==" ":
@@ -96,6 +97,8 @@ while True:
     if m==0:
         break
     
+
+
 
 
 
